@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  justify-content: center;
+  font-family: 'Alegreya Sans', sans-serif;
+  margin: 50px 0;
+}
+
+.section1 {
+  width: 360px;
+  padding: 0 15px;
+  line-height: 1.6em;
+}
+
+.section1 h1 {
+  font-size: 35px;
+  margin: 50px 0 20px;
+  line-height: 45px;
+}
+
+.daftar {
+  padding-bottom: 20px;
+}
+
+.doctor {
+  color: blue;
+}
+
+.section2 {
+  width: 360px;
+  padding: 0 15px;
+}
+
+.section3 {
+  width: 360px;
+  font-size: 17.6px;
+  padding: 0 15px;
+  text-align: justify;
+  line-height: 1.6em;
+}
+
+.section3 p {
+  padding-bottom: 20px;
+}
+
+.red {
+  color: red
+}

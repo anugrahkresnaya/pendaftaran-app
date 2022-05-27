@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 10px;
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+  font-size: 17.6px;
+}
+
+.section2 span {
+  color: #960595;
+  font-weight: bold;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #960595;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 4.7px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
