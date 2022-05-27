@@ -21,6 +21,10 @@
   align-self: center;
 }
 
+.li:hover {
+  color: yellow;
+}
+
 .covid {
   background-color: yellow;
   color: black;
