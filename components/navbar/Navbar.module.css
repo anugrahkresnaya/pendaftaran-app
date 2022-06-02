@@ -31,3 +31,15 @@
   background-color: yellow;
   color: black;
 }
+
+.button {
+  background-color: #960595;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}

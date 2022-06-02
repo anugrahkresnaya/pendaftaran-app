@@ -20,7 +20,7 @@ const Navbar = () => {
           <li className={styles.li}>Prosedur umum</li>
           <li className={styles.li}>FAQ</li>
           <li className={styles.li}>Pendaftaran</li>
-          <button onClick={() => setShowModal(true)}><li className={styles.li}>Login</li></button>
+          <button onClick={() => setShowModal(true)} className={styles.button}><li className={styles.li}>Login</li></button>
           <Login
             onClose={() => setShowModal(false)}
             show={showModal}
