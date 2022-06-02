@@ -22,6 +22,13 @@
   font-weight: bold;
 }
 
+.fill {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 4.7px;
+}
+
 .circle {
   width: 40px;
   height: 40px;
@@ -33,7 +40,18 @@
   margin: 0 4.7px;
 }
 
+.circle:hover {
+  background-color: #960595;
+  transition: all 0.8s ease-in-out;
+}
+
 .icon {
   width: 20px;
   height: 20px;
 }
+
+.fill:hover .icon {
+  color: white;
+  transition: all 0.8s ease-in-out;
+}
+

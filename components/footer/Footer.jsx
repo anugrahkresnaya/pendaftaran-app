@@ -10,27 +10,45 @@ const Footer = () => {
     <footer>
       <div className={styles.container}>
         <div className={styles.section1}>
-          <div className={styles.circle}>
-            <FontAwesomeIcon 
-              icon={faTwitter}  
-              color="#960595"
-              className={styles.icon}
-            />
-          </div>
-          <div className={styles.circle}>
-            <FontAwesomeIcon 
-              icon={faFacebookF}  
-              color="#960595"  
-              className={styles.icon}
-            />
-          </div>
-          <div className={styles.circle}>
-            <FontAwesomeIcon 
-              icon={faInstagram} 
-              color="#960595"
-              className={styles.icon}
-            />
-          </div>
+          <a 
+            href="https://twitter.com/gunadarma_" 
+            target="_blank"
+            className={styles.fill}
+          >
+            <div className={styles.circle}>
+              <FontAwesomeIcon 
+                icon={faTwitter}  
+                color="#960595"
+                className={styles.icon}
+              />
+            </div>
+          </a>
+          <a 
+            href="https://www.facebook.com/gunadarma/"
+            target="_blank"
+            className={styles.fill}
+          >
+            <div className={styles.circle}>
+              <FontAwesomeIcon 
+                icon={faFacebookF}  
+                color="#960595"  
+                className={styles.icon}
+              />
+            </div>
+          </a>
+          <a 
+            href="https://www.instagram.com/gunadarma/"
+            target="_blank"
+            className={styles.fill}
+          >
+            <div className={styles.circle}>
+              <FontAwesomeIcon 
+                icon={faInstagram} 
+                color="#960595"
+                className={styles.icon}
+              />
+            </div>
+          </a>
         </div>
         <div className={styles.section2}>
           <p>Copyright <span>Universitas Gunadarma</span></p>
