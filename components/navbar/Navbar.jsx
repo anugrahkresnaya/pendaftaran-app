@@ -1,7 +1,10 @@
 import styles from './Navbar.module.css';
 import Image from 'next/image';
+import Login from '../modal/Login';
+import { useState } from 'react';
 
 const Navbar = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <div>
       <nav className={styles.navbar}>
@@ -17,7 +20,11 @@ const Navbar = () => {
           <li className={styles.li}>Prosedur umum</li>
           <li className={styles.li}>FAQ</li>
           <li className={styles.li}>Pendaftaran</li>
-          <li className={styles.li}>Login</li>
+          <button onClick={() => setShowModal(true)}><li className={styles.li}>Login</li></button>
+          <Login
+            onClose={() => setShowModal(false)}
+            show={showModal}
+          ></Login>
         </ul>
       </nav>
     </div>
