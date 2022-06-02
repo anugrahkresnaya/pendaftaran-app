@@ -15,6 +15,8 @@ export default function Home() {
       
       <Navbar />
 
+      <div id="modal"></div>
+
       <Main />
 
       <Footer />
