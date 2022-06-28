@@ -10,6 +10,7 @@ const Main = () => {
             src='/images/akreditasi.png'
             width={150}
             height={170.95}
+            alt="akreditasi"
           />
           <h1>PENDAFTARAN MAHASISWA BARU UNIVERSITAS GUNADARMA</h1>
           <p className={styles.daftar}>Ayo daftar sekarang ! Bersama Universitas Gunadarma, raih masa depanmu saat ini.</p>
@@ -22,6 +23,7 @@ const Main = () => {
             src='/images/pmbonline.png'
             width={360}
             height={573.03}
+            alt="pmbonline"
           />
         </div>
         <div className={styles.section3}>

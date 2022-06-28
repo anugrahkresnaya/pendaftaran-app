@@ -3,8 +3,11 @@ import styles from './Navbar.module.css';
 import Image from 'next/image';
 // import Login from '../modal/Login';
 import { useState } from 'react';
+import { Suspense } from 'react';
 
-const Login = dynamic(() => import('../modal/Login'));
+const Login = dynamic(() => import('../modal/Login'), {
+  loading: () => <Login />
+});
 
 const Navbar = () => {
   const [showModal, setShowModal] = useState(false);
@@ -15,6 +18,7 @@ const Navbar = () => {
           src='/images/logo.png'
           height={60}
           width={350}
+          alt="logo"
         />
         <ul className={styles.ul}>
           <li className={`${styles.li} ${styles.covid}`}>Info Covid-19</li>
@@ -24,10 +28,12 @@ const Navbar = () => {
           <li className={styles.li}>FAQ</li>
           <li className={styles.li}>Pendaftaran</li>
           <button onClick={() => setShowModal(true)} className={styles.button}><li className={styles.li}>Login</li></button>
+
           <Login
             onClose={() => setShowModal(false)}
             show={showModal}
           ></Login>
+
         </ul>
       </nav>
     </div>

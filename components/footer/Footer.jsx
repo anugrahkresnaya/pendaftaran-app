@@ -12,7 +12,7 @@ const Footer = () => {
           <a 
             href="https://twitter.com/gunadarma_" 
             target="_blank"
-            className={styles.fill}
+            className={styles.fill} rel="noreferrer"
           >
             <div className={styles.circle}>
               <FontAwesomeIcon 
@@ -25,7 +25,7 @@ const Footer = () => {
           <a 
             href="https://www.facebook.com/gunadarma/"
             target="_blank"
-            className={styles.fill}
+            className={styles.fill} rel="noreferrer"
           >
             <div className={styles.circle}>
               <FontAwesomeIcon 
@@ -38,7 +38,7 @@ const Footer = () => {
           <a 
             href="https://www.instagram.com/gunadarma/"
             target="_blank"
-            className={styles.fill}
+            className={styles.fill} rel="noreferrer"
           >
             <div className={styles.circle}>
               <FontAwesomeIcon 

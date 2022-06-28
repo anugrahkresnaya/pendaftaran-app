@@ -1,15 +1,22 @@
 import dynamic from 'next/dynamic';
+import { Suspense } from 'react';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 // import Navbar from '../components/navbar/Navbar';
 // import Main from '../components/main/Main';
 // import Footer from '../components/footer/Footer';
 
-const Navbar = dynamic(() => import('../components/navbar/Navbar'));
+const Navbar = dynamic(() => import('../components/navbar/Navbar'), {
+  loading: () => <Navbar />,
+});
 
-const Main = dynamic(() => import('../components/main/Main'));
+const Main = dynamic(() => import('../components/main/Main'), {
+  loading: () => <Main />,
+});
 
-const Footer = dynamic(() => import('../components/footer/Footer'));
+const Footer = dynamic(() => import('../components/footer/Footer'), {
+  loading: () => <Footer />,
+});
 
 export default function Home() {
   return (
@@ -20,13 +27,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <Navbar />
+
+        <Navbar />
+
 
       <div id="modal"></div>
 
-      <Main />
 
-      <Footer />
+        <Main />
+
+
+        <Footer />
+
     </div>
   )
 }
