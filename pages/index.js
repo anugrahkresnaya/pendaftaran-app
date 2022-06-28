@@ -1,8 +1,15 @@
+import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import Navbar from '../components/navbar/Navbar';
-import Main from '../components/main/Main';
-import Footer from '../components/footer/Footer';
+// import Navbar from '../components/navbar/Navbar';
+// import Main from '../components/main/Main';
+// import Footer from '../components/footer/Footer';
+
+const Navbar = dynamic(() => import('../components/navbar/Navbar'));
+
+const Main = dynamic(() => import('../components/main/Main'));
+
+const Footer = dynamic(() => import('../components/footer/Footer'));
 
 export default function Home() {
   return (

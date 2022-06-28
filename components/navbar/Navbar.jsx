@@ -1,7 +1,10 @@
+import dynamic from 'next/dynamic';
 import styles from './Navbar.module.css';
 import Image from 'next/image';
-import Login from '../modal/Login';
+// import Login from '../modal/Login';
 import { useState } from 'react';
+
+const Login = dynamic(() => import('../modal/Login'));
 
 const Navbar = () => {
   const [showModal, setShowModal] = useState(false);
